@@ -162,6 +162,30 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Command + ` = esc",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -262,6 +286,14 @@
                             },
                             "to": {
                                 "key_code": "left_control"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "grave_accent_and_tilde"
+                            },
+                            "to": {
+                                "key_code": "escape"
                             }
                         },
                         {
@@ -410,3 +442,4 @@
         }
     ]
 }
+
